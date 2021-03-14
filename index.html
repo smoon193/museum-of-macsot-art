@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<!-- head section executes first when page loads -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+
+  <!-- font stuff copied from google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+
+  <!-- css stuff -->
+  <style>
+    /* no # applies to all elements of type body */
+    body {
+        margin: 0px;
+        /* overflow-x: hidden; */
+    }
+    /* # says element with this id */
+    #navbar {
+      background: #BFCE67;
+      /* height: 40px; */
+      /* padding: 10px; */
+      width: 100%;
+    }
+    /* all divs that are direct children of navbar */
+    #navbar > div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    h1 {
+        /* top right bottom left */
+        margin: 0px 0px 0px 20px;
+        height: 40px;
+        font-family: 'Ranchers', cursive;
+    }
+    .gallery-image {
+      width: 60%;
+    }
+    #gallery, #about-page {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        height: calc(100vh - 60px);
+        overflow: auto;
+    }
+  </style>
+
+  <script>
+    // document and window are browser-provided javascript elements
+    document.addEventListener('DOMContentLoaded', (event) => {
+      console.log("HI MOM") 
+
+      var galleryButton = document.getElementById("gallery-button");
+      var aboutButton = document.getElementById("about-button");
+      var aboutPage = document.getElementById("about-page");
+      var gallery = document.getElementById("gallery");
+
+      galleryButton.addEventListener('click', (event) => {
+        console.log("HI DAD")
+        gallery.style.display = "flex"; 
+        aboutPage.style.display = "none";
+      });
+
+      aboutButton.addEventListener('click', (event) => {
+        console.log("HI SON") 
+        gallery.style.display = "none"; 
+        aboutPage.style.display = "flex";
+      });
+    });
+  </script>
+  
+</head>
+
+<body>
+  <div id="navbar">
+      <div>
+        <h1>MoMA (Museum of Macsot Art)</h1>
+        <div id="button-group">
+            <button id="gallery-button">Gallery</button>
+            <button id="about-button">About</button>
+        </div>
+    </div>
+  </div>
+  <!-- img doesnt have a closing tag, just put slash after in the first tag -->
+  <div id="gallery">
+    <!-- these are siblings -->
+    <!-- elements can have more than one class, just separate by spaces within the quotes -->
+    <img class="gallery-image" src="images/creation of macsot.jpeg" />
+    <img class="gallery-image" src="images/terminator_macsot_final (2).png" />
+  </div>
+  <div id="about-page" style="display: none;">
+    <div style="font-size: 20px; text-align: center;">Under Construction!</div>
+    <img class="gallery-image" src="images/construction-macsot.PNG" />
+  </div>
+</body>
+
+
+</html>
