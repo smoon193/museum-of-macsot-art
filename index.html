@@ -23,6 +23,7 @@
       /* height: 40px; */
       /* padding: 10px; */
       width: 100%;
+      /* vertical-align: middle; */
     }
     /* all divs that are direct children of navbar */
     #navbar > div {
@@ -31,14 +32,16 @@
       justify-content: space-between;
       /* vertical-align: middle; */
     }
-    #button-group {
+    /* #button-group {
         vertical-align: middle;
-    }
+    } */
     h1 {
         /* top right bottom left */
-        margin: 0px 0px 0px 20px;
-        height: 40px;
+        margin: 0px 0px 0px 10px;
+        /* height: 40px; */
         font-family: 'Ranchers', cursive;
+        font-size: 3vw;
+        padding: 10px;
     }
     .gallery-image {
       width: 60%;
@@ -83,11 +86,11 @@
   <div id="navbar">
       <div>
         <h1>MoMA (Museum of Macsot Art)</h1>
-        <div id="button-group">
+        <div id="button-group" style="padding: 10px;">
             <button id="gallery-button">Gallery</button>
             <button id="about-button">About</button>
         </div>
-    </div>
+      </div>
   </div>
   <!-- img doesnt have a closing tag, just put slash after in the first tag -->
   <div id="gallery">
