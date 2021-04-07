@@ -47,7 +47,7 @@
     .gallery-image {
       width: 60%;
     }
-    #gallery, #about-page {
+    #gallery, #about-page, #where-is-macsot {
         display: flex;
         flex-direction: column;
         /* justify-content: center; */
@@ -72,19 +72,31 @@
 
       var galleryButton = document.getElementById("gallery-button");
       var aboutButton = document.getElementById("about-button");
+      var whereIsButton = document.getElementById("where-is-macsot-button");
+
       var aboutPage = document.getElementById("about-page");
       var gallery = document.getElementById("gallery");
+      var whereIs = document.getElementById("where-is-macsot");
 
       galleryButton.addEventListener('click', (event) => {
         console.log("HI DAD")
         gallery.style.display = "flex"; 
         aboutPage.style.display = "none";
+        whereIs.style.display = "none";
       });
 
       aboutButton.addEventListener('click', (event) => {
         console.log("HI SON") 
         gallery.style.display = "none"; 
+        whereIs.style.display = "none";
         aboutPage.style.display = "flex";
+      });
+
+      whereIsButton.addEventListener('click', (event) => {
+        console.log("HI MACSOT") 
+        gallery.style.display = "none"; 
+        aboutPage.style.display = "none";
+        whereIs.style.display = "flex";
       });
     });
   </script>
@@ -98,6 +110,7 @@
         <div id="button-group" style="padding: 10px;">
             <button id="gallery-button">Gallery</button>
             <button id="about-button">About</button>
+            <button id="where-is-macsot-button">Where is Macsot?</button>
         </div>
       </div>
   </div>
@@ -197,6 +210,17 @@
   <div id="about-page" style="display: none;">
     <div style="font-size: 20px; text-align: center; font-family: 'Ranchers', cursive;">Under Construction!</div>
     <img class="gallery-image" src="images/construction-macsot.PNG" />
+  </div>
+  <div id="where-is-macsot" style="display: none;">
+    <div style="font-size: 20px; text-align: center; font-family: 'Ranchers', cursive;">Where in the world is Macsot Sandiego?</div>
+    <div style="font-size: 16px; text-align: center; font-family: 'Ranchers', cursive;">Send me your photos of Macsot on your travels near and far!</div>
+    <img class="gallery-image" src="images/macsot_sandiego.png" />
+    <img class="gallery-image" src="images/daddy_macsot.jpg" />
+    <div style="font-size: 14px; text-align: center; font-family: 'Ranchers', cursive;">Victor's house!</div>
+    <!-- <figure class="gallery-image">
+      <img class="gallery-image" src="images/daddy_macsot.jpg" />
+      <figcaption>Victor's house!</figcaption>
+    </figure> -->
   </div>
 </body>
 
