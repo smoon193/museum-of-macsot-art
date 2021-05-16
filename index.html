@@ -22,17 +22,18 @@
   <div id="navbar">
       <div>
         <h1>MoMA (Museum of Macsot Art)</h1>
-        <div id="button-group" style="padding: 10px;">
+        <div id="button-group">
             <button id="gallery-button">Gallery</button>
             <button id="about-button">About</button>
             <button id="where-is-macsot-button">Where is Macsot?</button>
         </div>
       </div>
   </div>
-  <!-- img doesnt have a closing tag, just put slash after in the first tag -->
+  
   <div id="gallery">
     <!-- these are siblings -->
     <!-- elements can have more than one class, just separate by spaces within the quotes -->
+    <!-- img doesnt have a closing tag, just put slash after in the first tag -->
     <img class="gallery-image" src="images/creation of macsot.jpeg" />
     <img class="gallery-image" src="images/macsot_with_a_pearl_earring.jpg" />
     <img class="gallery-image" src="images/crocheted macsot.jpg" />
@@ -50,7 +51,6 @@
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <!-- <br> -->
     <!-- The dots/circles -->
     <div style="text-align:center">
       <span class="dot" onclick="currentSlide(1)"></span>
@@ -62,90 +62,7 @@
     <img class="gallery-image" src="images/macsot_ascii_art.PNG" />
     <img class="gallery-image" src="images/party-macsot.gif" />
     <img class="gallery-image" src="images/animal crossing lab.JPG" />
-    <img class="gallery-image" src="images/terminator_macsot_final (2).png" />
-    <div class="ascii-art">
-                                                        -///:-`                 
-                                                     `-/++++++:.                
-                                                    .++ooooo++++```   ```       
-                                                   -+ooooooooo+++//-.:///:`     
-                                                `./++ooooo+++++/++/+//////-     
-                                               `++++oooo+++++++++/+++/////:`    
-                                             `-+o+o+oo++++++/+++/:/oo+/////:    
-                                           `.:ooo+o++++/++++++o+/:/oo++/////-   
-                                        .-::/+++++++++++++++ooo+-/ooo++///+//   
-                                     ``:///////++++//++++++o+o++:/ooo+++///+/   
-                                    `://///+//////++++++++ooo++++oooooo+//++/   
-                                   `/++//+////+//++++oooooo++o+++ooooo++++++/`  
-                                 `:/++/+//+/+++++ooooooooooooooooooooo++++++:   
-                               `./+++++//++++++++oosssoooooo+++ooooo+++++++/.   
-                              .+++++++++++++///++ossssssooo+++ooo++++++++++/`   
-                             `+o++++++++++++//+sssssoo+++++ooooo++++++++++/.    
-                             -ooo+++o+++++++/++osooo++++++ooo++/++++++++++-     
-                             /soooo+oo++++++/ooooo+++++o++++/++++++++++++:      
-                             ossoooooo+o+oo+++++o+++++oo++//++++++++++++:`      
-                             oyssosoooo++ooo+++++o++o+o++++++++++oo+oo/.        
-                             :yysssooooooooo++////+++o++++++++oooooo+:`         
-                              +yyssssooooo++++///////+++++o+oooooo+:.           
-                              `oyyssssoooo++/////////++oooooooo+/-.             
-                               `/yso+oo++oo+++/+++++ooooossoo+-`                
-                          `.:/ossyysssssoooo+++++oooossyyyys-                   
-                       -:+ssssooooo+/++oo++++/////+oooyyhyy:                    
-                   `:+ooosooo+++++o++//++/++////+///+o++ossy+`                   
-                 -+osoooo+++o+////////++//++//++////o//+/+/oso/-                
-              `:ooooo+++++///////++/+/////////////:/o//////++////.              
-             :ooo++++++////////////////:::::///:/::+o/////++/:/+///.            
-           .+ooo++////////////////://::::::::::::////////++///+///++:`          
-          :o++++////////////////////::::::::::::::::///:///:/+////////.         
-        `+o++++++/////////////////://:::::::::::::::::::://///+/+++//++-        
-       `+soo+++++/////////////////:/:/::::::::::::::::::::://////++//+++-       
-       +soo+++++++/////+/////////////:/:::::::::::/:::::::::://///////++/.      
-      /soooo++++++//////////////////::////////////:::::::::::::////+//////.     
-     -ssoooo++++++//////++////////////////////:/:::::::::::::::://://+++///     
-     ossoooo++++++///+++sso+////////////////:::::::::/:::/::///://///+++///-    
-    -yssoooo+++++++//+ssyssso++//++///++//+////:::/:/:/://////////////o++///    
-    +ssoooo++++++++//+yyyysss+/+osoo+/o+osoo++/////////////////////////oo+/+`   
-    sssooooo++++++++/+osyyyy+/+syo//+ossyssooo+////////////////////////+++//.   
-   `yssoooooo++++++++oo+oooo+/oyo////syyysooo+///////////////////////////+//.   
-   `ysssooooo+++++ossyo+++/+++ss+////+++++/////////////////////////////////+-   
-   `ysssooooo+++++shysso+++++oyo/////+o////////////////////////////////////+.   
-    ssssooooo+++++oyyyhyo++osso+////+sys+///////////////////////////////++++.   
-    osssooooo++++++oosyyyyysoo++++osyyyyyo//////////////////////////////+++/    
-    :sssooooo+++++++++++oosyssyyyyysso+oso+////////////////////////////++++:    
-    .sssooooo+++++++++++++++++++++++/++/++////////////////////////////+++++`    
-     /ssooooooo+++++++++++++++++++///////////////////////////////////+++++:     
-     `osooooooo+++++++++++++++++++++/+/+///+///////////////////////+++++++`     
-      .oooooooo+++++++++++++++++++++++//+++/+///+/+//+//////////+/+++++++.      
-       -oooooooo+++++++++++++++++++++++/++++++++/+/+////////++++++++++++:       
-        .oooooooo++++++++++++++++o++++++++++++++++++/+///++//++++++++++:        
-         .oooo++o+++++++++++++++++++++++++++++++++++++//+/++++++++++++:         
-          `/ooo+oo++++++++++++++++++++++++++++++++++++//////+++++++++:          
-         `-+ysooo++++++++++++++++++++++++++++++++++++++//+++++++++oss+/.         
-      `:syhhhhysooooo+++++++++++++++++++++++++++++++++++++++++++osyyyyys/-`     
-     .syyhyhhhddhyyssoooo++++++++++++++++++++++++++++++++++ooosyyyyhyysssoo`    
-     +yyyyyhyhhhhhhhhhyyysssoooooooooooooooooooooooooossssyyyhhhhyyyssssoso+    
-     oyyyyyyyyyyyyyyhyyyyyhhyyyyyyyyyyyyyyyyyyyyyyyyhhhhyyyyyyyssssoooosoooo.   
-     /yyyyyyssyyyyyyyyyyyyyssssysssssssyyyyysssssssssooooooooooooooooooooooo.   
-     -syyyysyyyyysyyyysssssssssssooooooooossoooooo+oooooooooooooooooo+oooso/    
-      oyyyyyssyysyyysosysssssssooosssoosoo+o+oooooooo++ooooooooooosooooooo+.    
-      .yyyyyyyyyysssysssssyssssssssssoooo+oooossoooooooooosooosssosooosooo:     
-       /yyyyyyyyyyyysssyyssssssoosssssssooosooossssoooossooossooooosoooss+`     
-       `syyyyyysysysssssssyysssssssssssyo+oossssooosyooooosooosoossooosoo/      
-        oyyyyyyyyyyyssssysssssysssssysssoosysossssoooosssssooooosssossso+       
-       .syyyyyyyyyyyssssyssssssssysssssssossssssssssoooooooosososssoosso:       
-      -oyyyyyyyyyysssssssssysssossssssssoossssssssoooossosoooooossooosso+`      
-    -oyyyyyyyyysyysyssssssssssssssssssssoossssssssoooossssooooosooooooooo+-     
-  `+syyyyyyyyysssssssssssssssssoosssssssoooossssssoooossooooooooooooooooooo/-   
-  :yyyyysyyyyssssssssssssssssssssssssssso+ooosssoooooosooooooooooooooooooooo+:  
-  :yyyyyyyyyssysssssssssssssssssosossoooooooosoooooooooooo+oooooooooooooooooo+  
-  -osyyysyyssssssssssssssssssssso+ooooooooooooooooooo+++oooooooooooooooooooo+/  
-   `/ssysssssssssssssssssssossssoooooooooooo++++ooooo++++ooo+ooooooooo+oo+++-   
-     ./ossssssssssssssssoooosssoooosoooooooo++++ooooo++o++oooo+oooosoo+++/-`    
-       `-:+osssssssosssooooosossso++oooooooooooo+o+ooooooooo+oo+++++/:..`       
-            `.-//++ooooosssossoooooo+++ooosoo++++++++oo++++++++++/-.            
-                    `.-::+++//+++++o+++++++++++++++o+++///::-.``                
-                                    ````` ```.....```     
-  </div>
-  <br>
+    <img class="gallery-image" src="images/terminator_macsot_final (2).png" />  
   </div>
 
   <div id="about-page" style="display: none;">
@@ -170,12 +87,23 @@
   </div>
 
   <div id="where-is-macsot" style="display: none;">
-    <div style="font-size: 20px; text-align: center; font-family: 'Ranchers', cursive;">Where in the world is Macsot Sandiego?</div>
-    <div style="font-size: 16px; text-align: center; font-family: 'Montserrat Alternates', sans-serif;">Send me your photos of Macsot on your travels near and far!</div>
+    <!-- <div class="where-is-welcome">
+      <div class="where-is-image-box">
+        <img style="max-width: 100%" src="images/macsot_sandiego.png" />
+      </div>
+      <div class="where-is-welcome-text">
+        <div class="where-is-welcome-title">Where in the world is Macsot Sandiego?</div>
+        <div class="where-is-welcome-subtitle">Send me your photos of Macsot on your travels near and far!</div>
+      </div>
+    </div> -->
+    
+    <div class="where-is-welcome-title">Where in the world is Macsot Sandiego?</div>
+    <div class="where-is-welcome-subtitle">Send me your photos of Macsot on your travels near and far!</div>
     <img class="gallery-image" src="images/macsot_sandiego.png" />
     <img class="gallery-image" src="images/macsot_on_film.JPG" />
+    <div class="where-is-caption">&#128205; Macsot on film, North Park</div>
     <img class="gallery-image" src="images/daddy_macsot.jpg" />
-    <div style="font-size: 14px; text-align: center; font-family: 'Montserrat Alternates', sans-serif; margin-bottom: 20px;">Victor's house!</div>
+    <div class="where-is-caption">&#128205; Victor's house!</div>
     <!-- <figure class="gallery-image">
       <img class="gallery-image" src="images/daddy_macsot.jpg" />
       <figcaption>Victor's house!</figcaption>
