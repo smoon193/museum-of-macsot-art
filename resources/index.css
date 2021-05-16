@@ -1,0 +1,211 @@
+/* no # applies to all elements of type body */
+body {
+  margin: 0px;
+  /* overflow-x: hidden; */
+  overflow-y: hidden;
+}
+/* # says element with this id */
+#navbar {
+  background: #b164b5;
+  /* height: 40px; */
+  /* padding: 10px; */
+  width: 100%;
+  /* vertical-align: middle; */
+}
+/* all divs that are direct children of navbar */
+#navbar > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* vertical-align: middle; */
+}
+/* #button-group {
+    vertical-align: middle;
+} */
+h1 {
+  /* top right bottom left */
+  margin: 0px 0px 0px 10px;
+  /* height: 40px; */
+  font-family: "Ranchers", cursive;
+  font-size: 3vw;
+  padding: 10px;
+}
+.gallery-image {
+  width: 60%;
+  /* max-height: 100%; */
+}
+#about-page {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 60px);
+  overflow: auto;
+}
+.about-image-box {
+  width: 30%;
+  position: absolute;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* margin: 0px; */
+  height: 100%;
+  /* margin-top: auto; */
+  /* margin-bottom: auto; */
+}
+.about-image {
+  max-width: calc(100% - 20px);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.about-text-box {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+.about-title {
+  font-size: 20px;
+  text-align: left;
+  font-family: "Ranchers", cursive;
+  /* padding: 1%; */
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.about-text {
+  font-family: "Montserrat Alternates", sans-serif;
+  /* padding: 1%; */
+  margin: 5px 40px 0px 20px;
+}
+#gallery,
+#where-is-macsot {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: calc(100vh - 60px);
+  overflow: auto;
+}
+#button-group > button {
+  background: #cc91cd;
+  font-family: "Ranchers", cursive;
+}
+.ascii-art {
+  font-family: monospace;
+  white-space: pre;
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  width: 60%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  /* height: 15px;
+    width: 15px; */
+  height: 1vw;
+  width: 1vw;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
